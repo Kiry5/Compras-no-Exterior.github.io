@@ -8,6 +8,35 @@
       background-color: #f5f5f5;
     }
 
+    .header {
+      background-color: #007bff;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-image: url('logo.png');
+      background-size: cover;
+    }
+
+    .item-images {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1px;
+    }
+
+    .item-image {
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -124,9 +153,41 @@
       border: 4px solid #007bff;
       border-radius: 10px;
     }
+
+    .pergunta-container {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
   </style>
 </head>
 <body>
+  <div class="header">
+    <img src="tres-risquinhos.png" class="logo">
+    <div class="logo"></div>
+    <div class="item-images">
+      <div class="item-image" style="background-image: url('botao1.png');"></div>
+      <div class="item-image" style="background-image: url('botao2.png');"></div>
+      <div class="item-image" style="background-image: url('botao3.png');"></div>
+    </div>
+  </div>
   <div class="container">
     <h1 class="site-title">COMPRAS NO EXTERIOR - SITES E APLICATIVOS</h1>
     <div class="centered-image">
@@ -159,5 +220,9 @@
       <div class="disadvantage-item">FRAUDES: Um perigo da compra online é deixar o consumidor mais vulnerável a fraudes e golpes. Isso inclui clonagem de cartão de crédito e outras formas de fraude, como uso indevido de dados bancários, roubo de identidade, venda de produtos piratas e sites falsos.</div>
       <div class="disadvantage-item">NÃO É POSSÍVEL EXPERIMENTAR: Muitas vezes não se sabe ao certo o que vai receber. É difícil tomar uma decisão sobre qualidade, tamanho, textura, peso ou cor de um item com base em uma foto.</div>
     </div>
+    <div class="button-container">
+      <a href="outra_pagina.html" class="button">Pergunta</a>
+    </div>
+  </div>
 </body>
 </html>
